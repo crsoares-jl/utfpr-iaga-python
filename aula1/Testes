@@ -1,0 +1,170 @@
+"""
+nro = int(input())
+print("antecessor:", (nro - 1))
+print("numero....:", nro)
+print("sucessor..:", (nro + 1))
+
+
+a = int(input())
+b = int(input())
+c = int(input())
+l = [a, b, c]
+print("meio =", sorted(l)[1])
+
+nro = int(input())
+for x in range(nro):
+    for y in range(nro):
+        if (x == y):
+            print("@", end="")
+        else:
+            print(".", end="")
+    print()
+
+
+
+l = []
+
+for i in range(8):
+    nro = int(input())
+    l.append(nro)
+
+for ind in range(8):
+    print(f"a[{ind}] = {l[ind]}")
+
+print()
+
+print("Menor valor =", min(l))
+
+s = input()
+
+print(f"Entrada: {s}", end="")
+print()
+print("Saida..: ", end="")
+
+i = len(s)
+while i > 0:
+    print(s[i - 1], end="")
+    i = i - 1
+
+
+nro = float(input())
+print(f"Valor do Produto  = R$ {nro:.2f}")
+print(f"Valor do Desconto = R$ {(nro * 0.1):.2f}")
+print(f"Valor Final       = R$ {(nro * 0.9):.2f}")
+
+
+
+item = int(input())
+a = [10, 2, 7, 8, 5, 3, 22, 17, 18]
+ind = 0
+for i in range(len(a)):
+    if (i == 0):
+        print("{", end="")
+    print(f'{i}:{a[i]}', end="")
+    if (i < len(a) -1):
+        print(", ", end="")
+    if (i == len(a) - 1):
+        print("}")
+    if (a[i] == item):
+        ind = i
+print()
+if (ind > 0):
+    print(f'Item: {item}, foi encontrado na posição {ind}.')
+else:
+    print(f'Item: {item}, \"nao\" foi encontrado.')
+
+    
+nro = float(input())
+
+print(f"Valor do Produto        = R$ {nro:.2f}")
+if (nro < 5000):
+    print(f"Valor do Desconto (10%) = R$ {(nro * 0.1):.2f}")
+    print(f"Valor Final             = R$ {(nro * 0.9):.2f}")    
+else:
+    print(f"Valor do Desconto (15%) = R$ {(nro * 0.15):.2f}")
+    print(f"Valor Final             = R$ {(nro * 0.85):.2f}")    
+
+nro = int(input())
+for x in range(nro):
+    for y in range(nro):
+        if (x == 0 or x == nro - 1 or y == 0 or y == nro - 1):
+            print("* ", end="")
+            if (y == nro - 1):
+                print()
+        else:
+            print("@ ", end="")
+
+
+s = input()
+
+for i in range(3):
+    for j in range(len(s)):
+        print(f'{s[j]} ', end="")
+    print()
+
+
+    s1 = input()
+    s1 = s1.replace(".", "")
+    s2 = s1.split(" ")
+
+    print(f'Existem {len(s2)} palavras, são elas:')
+    print()
+    for i in range(len(s2)):
+    #    s2[i].replace(".", "")
+        print(f'{i+1}a. palavra = {s2[i]}')
+
+
+nro = int(input())
+print("{", end="")
+for x in range(nro):
+    if (x % 2 == 0):
+        nr = 0
+    else:
+        nr = 1
+    
+    print(nr, end="")
+    if (x < nro - 1):
+        print(", ", end="")
+print("}")
+
+
+lista = []
+for i in range(7):
+    n = int(input())
+    lista.append(n)
+
+lista = sorted(lista)
+for i in range(7):
+    print(f'x[{i}] = {lista[i]}')
+
+print()
+
+print(f'Menor elemento, x[0] = {lista[0]}]')
+print(f'Maior elemento, x[6] = {lista[6]}]')
+
+"""
+
+l1 = []
+l2 = []
+n = int(input())
+
+for i in range(n):
+    x = int(input())
+    l1.append(x)
+    if (l1[i] < 0):
+        l2.append(-1)
+    else:
+        if (l1[i] == 0):
+            l2.append(0)
+        else:
+            l2.append(1)
+
+print('[', end="")
+for i in range(n - 1):
+    print(f'{l1[i]}, ', end="")
+print(f'{l1[n - 1]}]')
+
+print('[', end="")
+for i in range(n - 1):
+    print(f'{l2[i]}, ', end="")
+print(f'{l2[n - 1]}]')

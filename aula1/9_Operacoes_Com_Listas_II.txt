@@ -1,0 +1,5 @@
+from Vetor import entrada, saida
+
+y = entrada("Vetor Y", 3)
+
+print(saida("Vetor Y", y))
