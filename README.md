@@ -10,7 +10,7 @@ Repositório desenvolvido durante a disciplina \*\*Fundamentos de Python\*\* da 
 
 
 
-Este repositório reúne os exercícios, exemplos e projetos desenvolvidos ao longo da disciplina, servindo como material de estudo e referência para futuras aplicações em Inteligência Artificial.
+Este repositório reúne os exercícios, exemplos e projetos desenvolvidos ao longo da disciplina, servindo como material de estudo e referência para futuras aplicações.
 
 
 
