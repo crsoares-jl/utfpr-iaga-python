@@ -1,0 +1,7 @@
+requests
+pandas
+reportlab
+pillow
+lxml
+cryptography
+zeep
